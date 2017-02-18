@@ -1,7 +1,7 @@
 # Stats-for-Sequences
  C implementation of Statistical methods and their applications on Sequences.
  
- 
+ -----------------------------------------------------------------------
  Stats - O/E score , a simple model for over and under represented words
  -----------------------------------------------------------------------
  Usage
@@ -15,9 +15,10 @@
  
  Note :  the books are taken from the https://www.gutenberg.org/ . all the white spaces and preamble is removed.
  
- HELP
+
  ----
- 
+ HELP
+ --------------------------------------------------------------------- 
  you can see the various option for the program if you do not give any arguments.below is the options available.
  
  Usage: word_count -min X -max Y [-descseq|-ascseq|-desctot|-asctot|-desclength|-asclength] filename [other filenames]
