@@ -1,0 +1,32 @@
+
+Markov.c implements the markov model to calculate the O/E scores for the books.
+Works for models 1,2,3 and above.
+
+The program is fast and expected time to finish execution is nearly 20sec
+
+The stationary distribution is assumed to be phi(w) = p(w)
+so for Example , for model = 2 and word = " THE ", we have :
+
+phi(T) * N(TH)/N(T) * N(HE)/N(H)
+
+for model = 3 we have
+
+phi(TH) * N(THE)/N(TH)
+here we assume,  phi(TH) = p(T)*p(H)
+
+two books were used for the output.
+
+books used :
+alice in wonderland
+einstein's theory of relativity
+
+
+
+compiling :
+-----------
+gcc Markov.c
+
+executing:
+----------
+./a.out -min 3 -max 5 -desctot -order 2 ./books/alice_in_wonderland_nows ./books/einstein_relativity_nows  > outfile.tsv
+
